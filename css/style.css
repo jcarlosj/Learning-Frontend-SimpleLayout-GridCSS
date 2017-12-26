@@ -1,0 +1,15 @@
+/* CSS File */
+
+h1 {
+  color: #666666;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+  background-color: #EAEAEA;
+}
