@@ -16,6 +16,11 @@ h1 {
     'box2 box3 box4'
     '. box5 .';
 }
+@media only screen and ( min-width: 768px ) {
+  .container {
+    grid-template-columns: repeat( 4, 1fr );    /* fr: fracción () */
+  }
+}
 
 .box-1,
 .box-2,
@@ -39,4 +44,27 @@ h1 {
 }
 .box-5 {
   grid-area: box5;
+}
+
+@media only screen and ( min-width: 786px ) {
+  .box-1 {
+    grid-row: 1 / 2;         /* De la línea 1 a la 2 en las filas */
+    grid-column: 3 / 5;      /* De la línea 3 a la 5 en las columnas */
+  }
+  .box-2 {
+    grid-row: 1 / 3;         /* De la línea 1 a la 3 en las filas */
+    grid-column: 1 / 3;      /* De la línea 1 a la 3 en las columnas */
+  }
+  .box-3 {
+    grid-row: 2 / 3;         /* De la línea 2 a la 3 en las filas */
+    grid-column: 3 / 5;      /* De la línea 3 a la 5 en las columnas */
+  }
+  .box-4 {
+    grid-row: 3 / 4;         /* De la línea 3 a la 4 en las filas */
+    grid-column: 1 / 2;      /* De la línea 1 a la 2 en las columnas */
+  }
+  .box-5 {
+    grid-row: 3 / 4;         /* De la línea 3 a la 4 en las filas */
+    grid-column: 2 / 4;      /* De la línea 2 a la 4 en las columnas */
+  }
 }
