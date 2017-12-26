@@ -6,6 +6,13 @@ h1 {
   text-transform: uppercase;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: repeat( 2, 100px );
+  grid-gap: 1rem;
+}
+
 .box-1,
 .box-2,
 .box-3,
